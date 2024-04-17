@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const userSchema = new mongoose.Schema({
+const userModel = new mongoose.Schema({
     FirstName: {
         type: String,
         required: [true, "First name is required"]
@@ -37,5 +37,5 @@ const userSchema = new mongoose.Schema({
     }
 })
 
-const userModel = mongoose.model("Users", userSchema);
-module.exports = userModel;
+const usermodel = mongoose.model("Users", userModel);
+module.exports = usermodel;
